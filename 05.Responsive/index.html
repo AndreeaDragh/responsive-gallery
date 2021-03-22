@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Responsive</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            padding: 10px;
+            margin-left: 20px;
+        }
+        .container{
+            max-width: 960px;
+            width: 90%;
+            padding: 20px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+            gap:45px;
+        }
+        .box{
+            height: 144px;
+            width: 144px;
+            border: 1px solid rgb(245, 245, 245);
+            border-radius: 20px;
+            background-color: rgba(65, 131, 218, 0.726);
+            box-shadow: 0 3px rgba(0, 0, 0, 0.171);
+        }
+        .blue{
+            width: 144px;
+            height: 115px;
+            background-image: url(placeholder-imag-resize.png);
+            background-position: center;
+        }
+        .text{
+            width: 144px;
+            height: 29px;
+            text-align: center;
+            line-height: 2;
+            font-size: 12px;
+            background-color: rgb(247, 247, 247);
+            border-bottom-right-radius: 18px;
+            border-bottom-left-radius: 18px;
+        }
+
+        @media screen and (max-width: 1024px) {
+          .container  {
+            grid-template-columns: repeat(5, 1fr);
+            }
+        }
+ 
+        @media screen and (max-width: 1015px) {
+            .container {
+            grid-template-columns: repeat(3, 1fr);
+            }
+        }
+ 
+        @media screen and (max-width: 414px) {
+            .container {
+            grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .para{
+            max-width: 960px;
+            width: 90%;
+            padding: 20px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+            gap:45px;
+        }
+        @media screen and (max-width: 1024px) {
+          .para  {
+            grid-template-columns: repeat(5, 1fr);
+            }
+        }
+ 
+        @media screen and (max-width: 1020px) {
+            .para {
+            grid-template-columns: repeat(1, 1fr);
+            }
+        }
+ 
+        @media screen and (max-width: 414px) {
+            .para {
+            grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2>Gallery Heading</h2>
+    <div class="container">
+        <div class="box">
+            <div class="blue"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="blue"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="blue"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="blue"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="blue"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="blue"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="blue"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="blue"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="blue"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="blue"></div>
+            <div class="text">Image Title</div>
+        </div>
+    </div>
+    <div class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</body>
+</html>
